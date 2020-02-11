@@ -2,6 +2,6 @@ package com.cg.eis.service;
 
 public interface EmployeeService 
 {
-	public  void insuranceSystem();
+	public  String insuranceSystem();
 	public void display();
 }

@@ -17,7 +17,7 @@ public class User {
 		 String name=sc.next();
 		 System.out.println("salary");
 		 int salary=sc.nextInt();
-		 System.out.println("designation1");
+		 System.out.println("designation");
 		String designation=sc.next();
 		Employee obj1=new Employee();
 		obj1.setDesignation(designation);
@@ -25,7 +25,9 @@ public class User {
 		obj1.setName(name);
 		obj1.setSalary(salary);
 		Service obj=new Service();
-		obj.insuranceSystem(salary,designation);
+		String insuranceScheme = obj.insuranceSystem(salary,designation);
+		obj1.setInsuranceScheme(insuranceScheme);
+		System.out.println(obj1.getInsuranceScheme());
 		System.out.println(obj1.toString());
 		
 		
